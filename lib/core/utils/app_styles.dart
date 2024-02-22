@@ -20,7 +20,7 @@ abstract class AppStyles {
     fontWeight: FontWeight.w400,
   );
   static const TextStyle styleRegular15 = TextStyle(
-    color: Color(0xff718EBF),
+    color: Color(0xff8BA3CB),
     fontSize: 15,
     fontFamily: 'Inter',
     fontWeight: FontWeight.w400,

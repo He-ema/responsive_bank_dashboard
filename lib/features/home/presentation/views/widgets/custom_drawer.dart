@@ -16,7 +16,7 @@ class CustomDrawer extends StatelessWidget {
         slivers: [
           const SliverToBoxAdapter(
             child: SizedBox(
-              height: 20,
+              height: 35,
             ),
           ),
           SliverToBoxAdapter(
