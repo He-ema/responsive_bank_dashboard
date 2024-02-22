@@ -102,6 +102,7 @@ class BlueCreditCardContainer extends StatelessWidget {
                 child: Padding(
                   padding: const EdgeInsets.only(left: 24, right: 24),
                   child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
                         '3778 **** **** 1234',

@@ -29,7 +29,7 @@ class CreditCard extends StatelessWidget {
           children: [
             Expanded(child: BlueCreditCardContainer()),
             SizedBox(
-              width: 30,
+              width: 15,
             ),
             Expanded(child: WhiteCreditCardContainer()),
           ],

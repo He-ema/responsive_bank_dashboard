@@ -33,6 +33,18 @@ class Assets {
   /// assets/images/dashboard.svg
   static const String imagesDashboard = "assets/images/dashboard.svg";
 
+  /// Assets for imagesIconfinder1
+  /// assets/images/iconfinder1.svg
+  static const String imagesIconfinder1 = "assets/images/iconfinder1.svg";
+
+  /// Assets for imagesIconfinder2
+  /// assets/images/iconfinder2.svg
+  static const String imagesIconfinder2 = "assets/images/iconfinder2.svg";
+
+  /// Assets for imagesIconfinder3
+  /// assets/images/iconfinder3.svg
+  static const String imagesIconfinder3 = "assets/images/iconfinder3.svg";
+
   /// Assets for imagesInvestments
   /// assets/images/investments.svg
   static const String imagesInvestments = "assets/images/investments.svg";
