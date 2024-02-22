@@ -17,6 +17,18 @@ class Assets {
   /// assets/images/card.svg
   static const String imagesCard = "assets/images/card.svg";
 
+  /// Assets for imagesCardtrailing
+  /// assets/images/cardtrailing.svg
+  static const String imagesCardtrailing = "assets/images/cardtrailing.svg";
+
+  /// Assets for imagesChip
+  /// assets/images/Chip.svg
+  static const String imagesChip = "assets/images/Chip.svg";
+
+  /// Assets for imagesChipCard
+  /// assets/images/chipCard.svg
+  static const String imagesChipCard = "assets/images/chipCard.svg";
+
   /// Assets for imagesDashboard
   /// assets/images/dashboard.svg
   static const String imagesDashboard = "assets/images/dashboard.svg";

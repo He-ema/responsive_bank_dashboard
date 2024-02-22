@@ -1,4 +1,4 @@
-import 'package:bank_dash/core/utils/app_styles.dart';
+import 'package:bank_dash/features/home/presentation/views/widgets/credit_card.dart';
 import 'package:bank_dash/features/home/presentation/views/widgets/custom_header.dart';
 import 'package:flutter/material.dart';
 
@@ -12,6 +12,7 @@ class DesktopOtherBody extends StatelessWidget {
     return const Column(
       children: [
         CustomHeader(),
+        CreditCard(),
       ],
     );
   }
