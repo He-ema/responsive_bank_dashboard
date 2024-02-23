@@ -63,6 +63,10 @@ class BarChartSample2State extends State<BarChartSample2> {
                   width: 20,
                 ),
                 ChartKey(text: 'Withdraw', color: Color(0xff1814F3)),
+                SizedBox(
+                  width: 20,
+                ),
+                ChartKey(text: 'Average', color: Color(0xff1778E0)),
               ],
             ),
             const SizedBox(

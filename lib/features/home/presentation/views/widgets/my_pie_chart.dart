@@ -13,24 +13,22 @@ class _MyPieChartState extends State<MyPieChart> {
   int activeIndex = -1;
   @override
   Widget build(BuildContext context) {
-    return LayoutBuilder(
-      builder: (context, constraints) => AspectRatio(
-        aspectRatio: 350 / 322,
-        child: Container(
-          decoration: ShapeDecoration(
-            color: Colors.white,
-            shape:
-                RoundedRectangleBorder(borderRadius: BorderRadius.circular(25)),
-          ),
-          child: PieChart(
-            getChartData(constraints),
-          ),
+    return AspectRatio(
+      aspectRatio: 350 / 322,
+      child: Container(
+        decoration: ShapeDecoration(
+          color: Colors.white,
+          shape:
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(25)),
+        ),
+        child: PieChart(
+          getChartData(),
         ),
       ),
     );
   }
 
-  PieChartData getChartData(BoxConstraints constraints) {
+  PieChartData getChartData() {
     return PieChartData(
         centerSpaceRadius: 0,
         pieTouchData: PieTouchData(
@@ -48,7 +46,7 @@ class _MyPieChartState extends State<MyPieChart> {
             titleStyle: AppStyles.styleSemiBold15.copyWith(color: Colors.white),
             showTitle: true,
             value: 35,
-            radius: constraints.maxWidth * (50 / 100) - 50,
+            radius: (MediaQuery.sizeOf(context).width / 7) - 60,
             color: const Color(0xFF1814F3),
           ),
           PieChartSectionData(
@@ -56,7 +54,7 @@ class _MyPieChartState extends State<MyPieChart> {
             titleStyle: AppStyles.styleSemiBold15.copyWith(color: Colors.white),
             titlePositionPercentageOffset: .6,
             showTitle: true,
-            radius: constraints.maxWidth * (50 / 100) - 50,
+            radius: (MediaQuery.sizeOf(context).width / 7) - 60,
             value: 45,
             color: const Color(0xFFFA00FF),
           ),
@@ -65,7 +63,7 @@ class _MyPieChartState extends State<MyPieChart> {
             titleStyle: AppStyles.styleSemiBold15.copyWith(color: Colors.white),
             showTitle: true,
             titlePositionPercentageOffset: .6,
-            radius: constraints.maxWidth * (50 / 100) - 40,
+            radius: (MediaQuery.sizeOf(context).width / 7) - 50,
             value: 40,
             color: const Color(0xFF343C6A),
           ),
@@ -75,7 +73,7 @@ class _MyPieChartState extends State<MyPieChart> {
             titleStyle: AppStyles.styleSemiBold15.copyWith(color: Colors.white),
             showTitle: true,
             value: 15,
-            radius: constraints.maxWidth * (50 / 100) - 20,
+            radius: (MediaQuery.sizeOf(context).width / 7) - 30,
             color: const Color(0xFFFC7900),
           ),
         ]);
