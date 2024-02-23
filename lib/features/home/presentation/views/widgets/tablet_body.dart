@@ -2,6 +2,7 @@ import 'package:bank_dash/features/home/presentation/views/widgets/balance_histo
 import 'package:bank_dash/features/home/presentation/views/widgets/chart_section.dart';
 import 'package:bank_dash/features/home/presentation/views/widgets/credit_card.dart';
 import 'package:bank_dash/features/home/presentation/views/widgets/expense_chart.dart';
+import 'package:bank_dash/features/home/presentation/views/widgets/quick_transfer.dart';
 import 'package:bank_dash/features/home/presentation/views/widgets/recent_transaction.dart';
 import 'package:flutter/material.dart';
 
@@ -41,19 +42,25 @@ class TabletBody extends StatelessWidget {
                 padding: EdgeInsets.symmetric(horizontal: 15),
                 child: Row(
                   children: [
-                    Expanded(flex: 2, child: ChartSection()),
+                    Expanded(flex: 730, child: ChartSection()),
                     SizedBox(
                       width: 15,
                     ),
-                    Expanded(child: ExpenseChart()),
+                    Expanded(flex: 350, child: ExpenseChart()),
                   ],
                 ),
               ),
-              Row(
-                children: [
-                  Expanded(child: SizedBox()),
-                  Expanded(flex: 2, child: BalanceHistory()),
-                ],
+              Padding(
+                padding: EdgeInsets.all(15),
+                child: Row(
+                  children: [
+                    Expanded(flex: 445, child: QuickTransfer()),
+                    SizedBox(
+                      width: 15,
+                    ),
+                    Expanded(flex: 635, child: BalanceHistory()),
+                  ],
+                ),
               ),
             ],
           ),
