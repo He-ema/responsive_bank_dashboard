@@ -21,7 +21,9 @@ class _BalanceChartState extends State<BalanceChart> {
     return Stack(
       children: <Widget>[
         AspectRatio(
-          aspectRatio: 635 / 276,
+          aspectRatio: MediaQuery.sizeOf(context).width < 800
+              ? (325 / 223)
+              : (635 / 276),
           child: Container(
             decoration: ShapeDecoration(
                 color: Colors.white,

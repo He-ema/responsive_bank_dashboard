@@ -48,7 +48,8 @@ class BarChartSample2State extends State<BarChartSample2> {
   @override
   Widget build(BuildContext context) {
     return AspectRatio(
-      aspectRatio: 730 / 322,
+      aspectRatio:
+          MediaQuery.sizeOf(context).width < 800 ? (350 / 300) : (730 / 322),
       child: Padding(
         padding: const EdgeInsets.all(16),
         child: Column(

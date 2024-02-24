@@ -14,7 +14,8 @@ class QuickTransferBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AspectRatio(
-      aspectRatio: 445 / 276,
+      aspectRatio:
+          MediaQuery.sizeOf(context).width < 800 ? (20 / 15) : (445 / 276),
       child: Container(
         decoration: ShapeDecoration(
             color: Colors.white,
