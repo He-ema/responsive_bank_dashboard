@@ -43,7 +43,8 @@ class _MyPieChartState extends State<MyPieChart> {
         sections: [
           PieChartSectionData(
             title: '35% \nOthers',
-            titleStyle: AppStyles.styleSemiBold15.copyWith(color: Colors.white),
+            titleStyle: AppStyles.styleSemiBold15(context)
+                .copyWith(color: Colors.white),
             showTitle: true,
             value: 35,
             radius: (MediaQuery.sizeOf(context).width / 8) - 60,
@@ -51,7 +52,8 @@ class _MyPieChartState extends State<MyPieChart> {
           ),
           PieChartSectionData(
             title: '20% \nInvestment',
-            titleStyle: AppStyles.styleSemiBold15.copyWith(color: Colors.white),
+            titleStyle: AppStyles.styleSemiBold15(context)
+                .copyWith(color: Colors.white),
             titlePositionPercentageOffset: .6,
             showTitle: true,
             radius: (MediaQuery.sizeOf(context).width / 8) - 60,
@@ -60,7 +62,8 @@ class _MyPieChartState extends State<MyPieChart> {
           ),
           PieChartSectionData(
             title: '30% \nEntertainment',
-            titleStyle: AppStyles.styleSemiBold15.copyWith(color: Colors.white),
+            titleStyle: AppStyles.styleSemiBold15(context)
+                .copyWith(color: Colors.white),
             showTitle: true,
             titlePositionPercentageOffset: .6,
             radius: (MediaQuery.sizeOf(context).width / 8) - 50,
@@ -70,7 +73,8 @@ class _MyPieChartState extends State<MyPieChart> {
           PieChartSectionData(
             title: '15% \nBill expense',
             titlePositionPercentageOffset: .7,
-            titleStyle: AppStyles.styleSemiBold15.copyWith(color: Colors.white),
+            titleStyle: AppStyles.styleSemiBold15(context)
+                .copyWith(color: Colors.white),
             showTitle: true,
             value: 15,
             radius: (MediaQuery.sizeOf(context).width / 8) - 30,

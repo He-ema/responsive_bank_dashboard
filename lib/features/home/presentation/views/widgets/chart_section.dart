@@ -7,17 +7,17 @@ class ChartSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
+    return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
           'Weekly Activity',
-          style: AppStyles.styleSemiBold22,
+          style: AppStyles.styleSemiBold22(context),
         ),
-        SizedBox(
+        const SizedBox(
           height: 18,
         ),
-        MyChart(),
+        const MyChart(),
       ],
     );
   }

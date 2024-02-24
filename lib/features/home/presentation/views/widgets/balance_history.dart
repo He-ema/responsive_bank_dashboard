@@ -7,17 +7,17 @@ class BalanceHistory extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
+    return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
           'Balance History',
-          style: AppStyles.styleSemiBold22,
+          style: AppStyles.styleSemiBold22(context),
         ),
-        SizedBox(
+        const SizedBox(
           height: 20,
         ),
-        BalanceChart(),
+        const BalanceChart(),
       ],
     );
   }

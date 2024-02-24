@@ -1,5 +1,6 @@
 import 'package:bank_dash/core/utils/app_styles.dart';
 import 'package:bank_dash/features/home/presentation/views/widgets/credit_card_container.dart';
+import 'package:bank_dash/features/home/presentation/views/widgets/credit_card_header.dart';
 import 'package:flutter/material.dart';
 
 class CreditCard extends StatelessWidget {
@@ -9,19 +10,7 @@ class CreditCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Column(
       children: [
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Text(
-              'My Cards',
-              style: AppStyles.styleSemiBold22,
-            ),
-            Text(
-              'See all',
-              style: AppStyles.styleSemiBold17,
-            ),
-          ],
-        ),
+        CreditCardHeader(),
         SizedBox(
           height: 20,
         ),

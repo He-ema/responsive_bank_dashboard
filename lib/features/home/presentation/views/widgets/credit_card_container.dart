@@ -30,13 +30,13 @@ class BlueCreditCardContainer extends StatelessWidget {
                 contentPadding: EdgeInsets.zero,
                 visualDensity:
                     const VisualDensity(horizontal: -4, vertical: -4),
-                title: const Text(
+                title: Text(
                   'Balance',
-                  style: AppStyles.styleRegular12,
+                  style: AppStyles.styleRegular12(context),
                 ),
-                subtitle: const Text(
+                subtitle: Text(
                   r'$5,756',
-                  style: AppStyles.styleSemiBold20,
+                  style: AppStyles.styleSemiBold20(context),
                 ),
                 trailing: SvgPicture.asset(
                   Assets.imagesChip,
@@ -52,13 +52,13 @@ class BlueCreditCardContainer extends StatelessWidget {
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      const Text(
+                      Text(
                         'CARD HOLDER',
-                        style: AppStyles.styleRegular12,
+                        style: AppStyles.styleRegular12(context),
                       ),
                       Text(
                         'Eddy Cusuma',
-                        style: AppStyles.styleSemiBold15
+                        style: AppStyles.styleSemiBold15(context)
                             .copyWith(color: Colors.white),
                       ),
                     ],
@@ -67,13 +67,13 @@ class BlueCreditCardContainer extends StatelessWidget {
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      const Text(
+                      Text(
                         'VALID THRU',
-                        style: AppStyles.styleRegular12,
+                        style: AppStyles.styleRegular12(context),
                       ),
                       Text(
                         '12/22',
-                        style: AppStyles.styleSemiBold15
+                        style: AppStyles.styleSemiBold15(context)
                             .copyWith(color: Colors.white),
                       ),
                     ],
@@ -106,7 +106,7 @@ class BlueCreditCardContainer extends StatelessWidget {
                     children: [
                       Text(
                         '3778 **** **** 1234',
-                        style: AppStyles.styleSemiBold22
+                        style: AppStyles.styleSemiBold22(context)
                             .copyWith(color: Colors.white),
                       ),
                       // const Spacer(),
@@ -152,12 +152,12 @@ class WhiteCreditCardContainer extends StatelessWidget {
                     const VisualDensity(horizontal: -4, vertical: -4),
                 title: Text(
                   'Balance',
-                  style: AppStyles.styleRegular12
+                  style: AppStyles.styleRegular12(context)
                       .copyWith(color: const Color(0xff343C6A)),
                 ),
                 subtitle: Text(
                   r'$5,756',
-                  style: AppStyles.styleSemiBold20
+                  style: AppStyles.styleSemiBold20(context)
                       .copyWith(color: const Color(0xff343C6A)),
                 ),
                 trailing: SvgPicture.asset(
@@ -177,12 +177,12 @@ class WhiteCreditCardContainer extends StatelessWidget {
                     children: [
                       Text(
                         'CARD HOLDER',
-                        style: AppStyles.styleRegular12
+                        style: AppStyles.styleRegular12(context)
                             .copyWith(color: const Color(0xff343C6A)),
                       ),
-                      const Text(
+                      Text(
                         'Eddy Cusuma',
-                        style: AppStyles.styleSemiBold15,
+                        style: AppStyles.styleSemiBold15(context),
                       ),
                     ],
                   ),
@@ -192,12 +192,12 @@ class WhiteCreditCardContainer extends StatelessWidget {
                     children: [
                       Text(
                         'VALID THRU',
-                        style: AppStyles.styleRegular12
+                        style: AppStyles.styleRegular12(context)
                             .copyWith(color: const Color(0xff343C6A)),
                       ),
-                      const Text(
+                      Text(
                         '12/22',
-                        style: AppStyles.styleSemiBold15,
+                        style: AppStyles.styleSemiBold15(context),
                       ),
                     ],
                   ),
@@ -226,9 +226,9 @@ class WhiteCreditCardContainer extends StatelessWidget {
                   padding: const EdgeInsets.only(left: 24, right: 24),
                   child: Row(
                     children: [
-                      const Text(
+                      Text(
                         '3778 **** **** 1234',
-                        style: AppStyles.styleSemiBold22,
+                        style: AppStyles.styleSemiBold22(context),
                       ),
                       const Spacer(),
                       SvgPicture.asset(

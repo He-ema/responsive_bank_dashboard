@@ -25,17 +25,17 @@ class RecentTransactionItem extends StatelessWidget {
       ),
       title: Text(
         recentTransactionModel.title,
-        style: AppStyles.styleMedium16,
+        style: AppStyles.styleMedium16(context),
       ),
       subtitle: Text(
         recentTransactionModel.subtitle,
-        style: AppStyles.styleRegular15.copyWith(
+        style: AppStyles.styleRegular15(context).copyWith(
           color: const Color(0xff718EBF),
         ),
       ),
       trailing: Text(
         recentTransactionModel.amount,
-        style: AppStyles.styleMedium16.copyWith(
+        style: AppStyles.styleMedium16(context).copyWith(
             color: recentTransactionModel.isWhithDrawl
                 ? const Color(0xffFF4B4A)
                 : const Color(0xff41D4A8)),

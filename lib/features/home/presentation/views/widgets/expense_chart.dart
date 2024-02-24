@@ -7,17 +7,17 @@ class ExpenseChart extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
+    return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
           'Expense Statistics',
-          style: AppStyles.styleSemiBold22,
+          style: AppStyles.styleSemiBold22(context),
         ),
-        SizedBox(
+        const SizedBox(
           height: 18,
         ),
-        MyPieChart(),
+        const MyPieChart(),
       ],
     );
   }

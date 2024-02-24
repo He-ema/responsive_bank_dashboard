@@ -11,7 +11,7 @@ class QuickTransferTextField extends StatelessWidget {
     return TextField(
       decoration: InputDecoration(
         hintText: 'Amount',
-        hintStyle: AppStyles.styleRegular16.copyWith(
+        hintStyle: AppStyles.styleRegular16(context).copyWith(
           color: const Color(0xff718EBF),
         ),
         filled: true,

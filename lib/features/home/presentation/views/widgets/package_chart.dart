@@ -290,7 +290,7 @@ class ChartKey extends StatelessWidget {
         ),
         Text(
           text,
-          style: AppStyles.styleRegular15,
+          style: AppStyles.styleRegular15(context),
         ),
       ],
     );

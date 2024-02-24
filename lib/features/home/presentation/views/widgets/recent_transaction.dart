@@ -12,9 +12,9 @@ class RecentTransaction extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const Text(
+        Text(
           'Recent Transaction',
-          style: AppStyles.styleSemiBold22,
+          style: AppStyles.styleSemiBold22(context),
         ),
         const SizedBox(
           height: 20,

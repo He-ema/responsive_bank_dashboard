@@ -16,14 +16,14 @@ class QuickTransferItem extends StatelessWidget {
         ),
         Text(
           quickTransferModel.title,
-          style: AppStyles.styleRegular16,
+          style: AppStyles.styleRegular16(context),
         ),
         const SizedBox(
           height: 5,
         ),
         Text(
           quickTransferModel.subtitle,
-          style: AppStyles.styleRegular15,
+          style: AppStyles.styleRegular15(context),
         ),
       ],
     );

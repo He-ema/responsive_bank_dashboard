@@ -10,16 +10,16 @@ class QuickTransfer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
+    return Column(
       children: [
         Text(
           'Quick Transfer',
-          style: AppStyles.styleSemiBold22,
+          style: AppStyles.styleSemiBold22(context),
         ),
-        SizedBox(
+        const SizedBox(
           height: 20,
         ),
-        QuickTransferBody(),
+        const QuickTransferBody(),
       ],
     );
   }

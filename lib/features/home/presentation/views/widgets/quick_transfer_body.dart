@@ -34,7 +34,7 @@ class QuickTransferBody extends StatelessWidget {
                   children: [
                     Text(
                       'Write Amouunt',
-                      style: AppStyles.styleRegular16
+                      style: AppStyles.styleRegular16(context)
                           .copyWith(color: const Color(0xff718EBF)),
                     ),
                     const SizedBox(
@@ -61,7 +61,7 @@ class QuickTransferBody extends StatelessWidget {
                           children: [
                             Text(
                               'Send',
-                              style: AppStyles.styleMedium16
+                              style: AppStyles.styleMedium16(context)
                                   .copyWith(color: Colors.white),
                             ),
                             SvgPicture.asset(Assets.imagesSendArrow),

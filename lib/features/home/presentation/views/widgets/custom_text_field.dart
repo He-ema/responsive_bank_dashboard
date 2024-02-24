@@ -9,7 +9,7 @@ class CustomTextField extends StatelessWidget {
     return TextField(
       decoration: InputDecoration(
         hintText: 'Serach for something',
-        hintStyle: AppStyles.styleRegular15,
+        hintStyle: AppStyles.styleRegular15(context),
         prefixIcon: const Icon(
           Icons.search,
           color: Color(0xff8BA3CB),

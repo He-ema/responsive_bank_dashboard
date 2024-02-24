@@ -14,30 +14,30 @@ class CustomHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: Colors.white,
-      child: const Padding(
-        padding: EdgeInsets.all(15),
+      child: Padding(
+        padding: const EdgeInsets.all(15),
         child: Row(
           children: [
             Text(
               'Overview',
-              style: AppStyles.styleSemiBold28,
+              style: AppStyles.styleSemiBold28(context),
             ),
-            Expanded(child: SizedBox()),
-            Expanded(
+            const Expanded(child: SizedBox()),
+            const Expanded(
               child: CustomTextField(),
             ),
-            SizedBox(
+            const SizedBox(
               width: 30,
             ),
-            CustomIcon(image: Assets.imagesSettings),
-            SizedBox(
+            const CustomIcon(image: Assets.imagesSettings),
+            const SizedBox(
               width: 30,
             ),
-            CustomIcon(image: Assets.imagesNotifiactions),
-            SizedBox(
+            const CustomIcon(image: Assets.imagesNotifiactions),
+            const SizedBox(
               width: 30,
             ),
-            ImageAvatar(image: Assets.imagesAvatarMan),
+            const ImageAvatar(image: Assets.imagesAvatarMan),
           ],
         ),
       ),
