@@ -3,6 +3,7 @@ import 'package:bank_dash/core/utils/assets.dart';
 import 'package:bank_dash/features/home/presentation/views/widgets/adaptive_layout_widget.dart';
 import 'package:bank_dash/features/home/presentation/views/widgets/bank_dashboard_desktop.dart';
 import 'package:bank_dash/features/home/presentation/views/widgets/bank_dashboard_mobile.dart';
+import 'package:bank_dash/features/home/presentation/views/widgets/bank_dashboard_tablet.dart';
 import 'package:bank_dash/features/home/presentation/views/widgets/custom_drawer.dart';
 import 'package:bank_dash/features/home/presentation/views/widgets/image_avatar.dart';
 import 'package:bank_dash/features/home/presentation/views/widgets/tablet_body.dart';
@@ -46,7 +47,7 @@ class _HomeViewState extends State<HomeView> {
           : const Color(0xfff5f7fa),
       body: AdaptiveLayout(
         mobileLayout: (context) => const BankDashboardMobile(),
-        tabletLayout: (context) => TabletBody(openDrawer: openDrawer),
+        tabletLayout: (context) => const BankDashboardTablet(),
         desktopLayout: (context) => const BankDashboardDesktop(),
       ),
     );

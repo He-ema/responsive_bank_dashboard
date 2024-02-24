@@ -20,7 +20,11 @@ class RecentTransaction extends StatelessWidget {
           height: 20,
         ),
         AspectRatio(
-          aspectRatio: MediaQuery.sizeOf(context).width < 800 ? 1 : (350 / 235),
+          aspectRatio: MediaQuery.sizeOf(context).width < 800
+              ? 1
+              : (MediaQuery.sizeOf(context).width < 1100
+                  ? (350 / 150)
+                  : (350 / 245)),
           child: Container(
             decoration: ShapeDecoration(
               color: Colors.white,

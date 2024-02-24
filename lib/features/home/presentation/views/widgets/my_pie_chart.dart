@@ -50,7 +50,9 @@ class _MyPieChartState extends State<MyPieChart> {
             value: 35,
             radius: MediaQuery.sizeOf(context).width < 800
                 ? (MediaQuery.sizeOf(context).width / 2 - 60)
-                : (MediaQuery.sizeOf(context).width / 8) - 60,
+                : (MediaQuery.sizeOf(context).width < 1100
+                    ? ((MediaQuery.sizeOf(context).width / 3) - 60)
+                    : ((MediaQuery.sizeOf(context).width / 8) - 60)),
             color: const Color(0xFF1814F3),
           ),
           PieChartSectionData(
@@ -61,7 +63,9 @@ class _MyPieChartState extends State<MyPieChart> {
             showTitle: true,
             radius: MediaQuery.sizeOf(context).width < 800
                 ? (MediaQuery.sizeOf(context).width / 2 - 60)
-                : (MediaQuery.sizeOf(context).width / 8) - 60,
+                : (MediaQuery.sizeOf(context).width < 1100
+                    ? ((MediaQuery.sizeOf(context).width / 3) - 60)
+                    : ((MediaQuery.sizeOf(context).width / 8) - 60)),
             value: 45,
             color: const Color(0xFFFA00FF),
           ),
@@ -73,7 +77,9 @@ class _MyPieChartState extends State<MyPieChart> {
             titlePositionPercentageOffset: .6,
             radius: MediaQuery.sizeOf(context).width < 800
                 ? (MediaQuery.sizeOf(context).width / 2 - 50)
-                : (MediaQuery.sizeOf(context).width / 8) - 50,
+                : (MediaQuery.sizeOf(context).width < 1100
+                    ? ((MediaQuery.sizeOf(context).width / 3) - 50)
+                    : ((MediaQuery.sizeOf(context).width / 8) - 50)),
             value: 40,
             color: const Color(0xFF343C6A),
           ),
@@ -86,7 +92,9 @@ class _MyPieChartState extends State<MyPieChart> {
             value: 15,
             radius: MediaQuery.sizeOf(context).width < 800
                 ? (MediaQuery.sizeOf(context).width / 2 - 30)
-                : (MediaQuery.sizeOf(context).width / 8) - 30,
+                : (MediaQuery.sizeOf(context).width < 1100
+                    ? ((MediaQuery.sizeOf(context).width / 3) - 30)
+                    : ((MediaQuery.sizeOf(context).width / 8) - 30)),
             color: const Color(0xFFFC7900),
           ),
         ]);

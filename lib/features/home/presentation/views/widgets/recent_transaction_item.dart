@@ -10,9 +10,10 @@ class RecentTransactionItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
+      minVerticalPadding: 0,
       leading: Container(
-        width: 55,
-        height: 55,
+        width: 45,
+        height: 45,
         decoration: ShapeDecoration(
           color: recentTransactionModel.iconBackGroundColor,
           shape: RoundedRectangleBorder(
@@ -23,14 +24,20 @@ class RecentTransactionItem extends StatelessWidget {
           child: SvgPicture.asset(recentTransactionModel.icon),
         ),
       ),
-      title: Text(
-        recentTransactionModel.title,
-        style: AppStyles.styleMedium16(context),
+      title: FittedBox(
+        fit: BoxFit.scaleDown,
+        child: Text(
+          recentTransactionModel.title,
+          style: AppStyles.styleMedium16(context),
+        ),
       ),
-      subtitle: Text(
-        recentTransactionModel.subtitle,
-        style: AppStyles.styleRegular15(context).copyWith(
-          color: const Color(0xff718EBF),
+      subtitle: FittedBox(
+        fit: BoxFit.scaleDown,
+        child: Text(
+          recentTransactionModel.subtitle,
+          style: AppStyles.styleRegular15(context).copyWith(
+            color: const Color(0xff718EBF),
+          ),
         ),
       ),
       trailing: Text(

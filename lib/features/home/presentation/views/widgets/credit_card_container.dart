@@ -11,7 +11,7 @@ class BlueCreditCardContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AspectRatio(
-      aspectRatio: 350 / 235,
+      aspectRatio: (350 / 245),
       child: Container(
         decoration: ShapeDecoration(
           color: const Color(0xff4C49ED),
@@ -131,7 +131,7 @@ class WhiteCreditCardContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AspectRatio(
-      aspectRatio: 350 / 235,
+      aspectRatio: (350 / 245),
       child: Container(
         decoration: ShapeDecoration(
           color: Colors.white,

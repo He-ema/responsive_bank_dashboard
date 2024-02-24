@@ -20,7 +20,7 @@ class CustomHeader extends StatelessWidget {
         child: Row(
           children: [
             MediaQuery.sizeOf(context).width < 1100 &&
-                    MediaQuery.sizeOf(context).width > 800
+                    MediaQuery.sizeOf(context).width >= 800
                 ? Padding(
                     padding: const EdgeInsets.only(right: 10),
                     child: IconButton(

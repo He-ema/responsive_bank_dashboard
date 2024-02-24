@@ -18,9 +18,11 @@ class TabletBody extends StatelessWidget {
     return CustomScrollView(
       slivers: [
         SliverToBoxAdapter(
-          child: CustomHeader(
-            openDrawer: openDrawer,
-          ),
+          child: MediaQuery.sizeOf(context).width >= 1100
+              ? const SizedBox()
+              : CustomHeader(
+                  openDrawer: openDrawer,
+                ),
         ),
         const SliverFillRemaining(
           hasScrollBody: false,
