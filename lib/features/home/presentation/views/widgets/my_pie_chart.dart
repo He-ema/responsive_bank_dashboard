@@ -11,6 +11,7 @@ class MyPieChart extends StatefulWidget {
 
 class _MyPieChartState extends State<MyPieChart> {
   int activeIndex = -1;
+
   @override
   Widget build(BuildContext context) {
     return AspectRatio(
@@ -47,7 +48,9 @@ class _MyPieChartState extends State<MyPieChart> {
                 .copyWith(color: Colors.white),
             showTitle: true,
             value: 35,
-            radius: (MediaQuery.sizeOf(context).width / 8) - 60,
+            radius: MediaQuery.sizeOf(context).width < 800
+                ? (MediaQuery.sizeOf(context).width / 2 - 60)
+                : (MediaQuery.sizeOf(context).width / 8) - 60,
             color: const Color(0xFF1814F3),
           ),
           PieChartSectionData(
@@ -56,7 +59,9 @@ class _MyPieChartState extends State<MyPieChart> {
                 .copyWith(color: Colors.white),
             titlePositionPercentageOffset: .6,
             showTitle: true,
-            radius: (MediaQuery.sizeOf(context).width / 8) - 60,
+            radius: MediaQuery.sizeOf(context).width < 800
+                ? (MediaQuery.sizeOf(context).width / 2 - 60)
+                : (MediaQuery.sizeOf(context).width / 8) - 60,
             value: 45,
             color: const Color(0xFFFA00FF),
           ),
@@ -66,7 +71,9 @@ class _MyPieChartState extends State<MyPieChart> {
                 .copyWith(color: Colors.white),
             showTitle: true,
             titlePositionPercentageOffset: .6,
-            radius: (MediaQuery.sizeOf(context).width / 8) - 50,
+            radius: MediaQuery.sizeOf(context).width < 800
+                ? (MediaQuery.sizeOf(context).width / 2 - 50)
+                : (MediaQuery.sizeOf(context).width / 8) - 50,
             value: 40,
             color: const Color(0xFF343C6A),
           ),
@@ -77,7 +84,9 @@ class _MyPieChartState extends State<MyPieChart> {
                 .copyWith(color: Colors.white),
             showTitle: true,
             value: 15,
-            radius: (MediaQuery.sizeOf(context).width / 8) - 30,
+            radius: MediaQuery.sizeOf(context).width < 800
+                ? (MediaQuery.sizeOf(context).width / 2 - 30)
+                : (MediaQuery.sizeOf(context).width / 8) - 30,
             color: const Color(0xFFFC7900),
           ),
         ]);

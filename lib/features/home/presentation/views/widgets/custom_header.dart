@@ -8,8 +8,9 @@ import 'package:flutter/material.dart';
 class CustomHeader extends StatelessWidget {
   const CustomHeader({
     super.key,
+    this.openDrawer,
   });
-
+  final VoidCallback? openDrawer;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -18,6 +19,17 @@ class CustomHeader extends StatelessWidget {
         padding: const EdgeInsets.all(15),
         child: Row(
           children: [
+            MediaQuery.sizeOf(context).width < 1100 &&
+                    MediaQuery.sizeOf(context).width > 800
+                ? Padding(
+                    padding: const EdgeInsets.only(right: 10),
+                    child: IconButton(
+                        onPressed: () {
+                          openDrawer!();
+                        },
+                        icon: const Icon(Icons.menu)),
+                  )
+                : const SizedBox(),
             Text(
               'Overview',
               style: AppStyles.styleSemiBold28(context),

@@ -1,6 +1,7 @@
 import 'package:bank_dash/features/home/presentation/views/widgets/balance_history.dart';
 import 'package:bank_dash/features/home/presentation/views/widgets/chart_section.dart';
 import 'package:bank_dash/features/home/presentation/views/widgets/credit_card.dart';
+import 'package:bank_dash/features/home/presentation/views/widgets/custom_header.dart';
 import 'package:bank_dash/features/home/presentation/views/widgets/expense_chart.dart';
 import 'package:bank_dash/features/home/presentation/views/widgets/quick_transfer.dart';
 import 'package:bank_dash/features/home/presentation/views/widgets/recent_transaction.dart';
@@ -9,13 +10,19 @@ import 'package:flutter/material.dart';
 class TabletBody extends StatelessWidget {
   const TabletBody({
     super.key,
+    this.openDrawer,
   });
-
+  final VoidCallback? openDrawer;
   @override
   Widget build(BuildContext context) {
-    return const CustomScrollView(
+    return CustomScrollView(
       slivers: [
-        SliverFillRemaining(
+        SliverToBoxAdapter(
+          child: CustomHeader(
+            openDrawer: openDrawer,
+          ),
+        ),
+        const SliverFillRemaining(
           hasScrollBody: false,
           child: Column(
             children: [

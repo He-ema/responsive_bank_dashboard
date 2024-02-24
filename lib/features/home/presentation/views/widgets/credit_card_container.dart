@@ -136,8 +136,10 @@ class WhiteCreditCardContainer extends StatelessWidget {
         decoration: ShapeDecoration(
           color: Colors.white,
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(25),
-          ),
+              borderRadius: BorderRadius.circular(25),
+              side: MediaQuery.sizeOf(context).width < 800
+                  ? const BorderSide()
+                  : BorderSide.none),
         ),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
